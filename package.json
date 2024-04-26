@@ -1,6 +1,6 @@
 {
   "name": "notify_bots",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "exports": "./index.js",
   "types": "./index.d.ts",
@@ -8,8 +8,8 @@
   "funding": "https://github.com/Sylor-huang/notify_bots.git",
   "license": "MIT",
   "dependencies": {
-    "@types/node-fetch": "^2.6.11",
+    "@types/node-fetch": "2.6.11",
     "crypto": "^1.0.1",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "2.6.7"
   }
 }
