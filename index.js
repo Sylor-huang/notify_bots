@@ -1,7 +1,7 @@
 import crypto from "crypto"
 import fetch from "node-fetch"
 
-class Bot {
+class NotiFyBot {
   constructor(url, secret_key) {
     this.webhookUrl = url;
     this.secret_key = secret_key;
@@ -83,4 +83,4 @@ class Bot {
   }
 }
 
-module.exports = Bot;
+module.exports = NotiFyBot;
