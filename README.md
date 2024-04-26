@@ -16,7 +16,7 @@ yarn add notify_bots
 const Bot = require("notify_bots");
 
 // class 第一个参数是群组设置里的 webhook 地址，设置了签名校验的话，第二个参数传入密钥。
-const bot = new Bot(
+const bot = new NotifyBot(
   "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 );
 

@@ -1,6 +1,6 @@
 {
   "name": "notify_bots",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
 	"exports": "./index.js",
 	"types": "./index.d.ts",
