@@ -1,5 +1,5 @@
 import crypto from "crypto"
-import fetch from "node-fetch"
+import axios from "axios"
 
 class NotiFyBot {
   constructor(url, secret_key) {
@@ -19,24 +19,17 @@ class NotiFyBot {
       data.timestamp = timestamp;
       data.sign = this.sign(timestamp);
     }
-    return fetch(this.webhookUrl, {
-      method: "POST",
+
+    return axios.post(this.webhookUrl, data, {
       headers: {
-        "content-type": "application/json; charset=utf-8",
-      },
-      body: JSON.stringify(data),
+        'Content-Type': 'application/json; charset=utf-8'  // 设置请求头
+      }
+    }).then(res => {
+      return res.data;
     })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.StatusMessage === "success") {
-          return data;
-        } else {
-          return data;
-        }
-      })
-      .catch((err) => {
-        console.error("发送失败，发生错误！");
-        throw err;
+      .catch(error => {
+        console.error('Error:', error);
+        throw error;
       });
   }
   /**
