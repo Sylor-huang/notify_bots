@@ -4,6 +4,8 @@
   "type": "module",
 	"exports": "./index.js",
 	"types": "./index.d.ts",
+  "repository": "Sylor-huang/notify_bots",
+	"funding": "https://github.com/Sylor-huang/notify_bots.git",
   "license": "MIT",
   "dependencies": {
     "crypto": "^1.0.1",
