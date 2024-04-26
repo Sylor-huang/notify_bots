@@ -1,7 +1,7 @@
 import crypto from "crypto"
 import axios from "axios"
 
-class NotiFyBot {
+export default class NotiFyBot {
   constructor(url, secret_key) {
     this.webhookUrl = url;
     this.secret_key = secret_key;
@@ -75,5 +75,3 @@ class NotiFyBot {
     });
   }
 }
-
-module.exports = NotiFyBot;
