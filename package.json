@@ -1,6 +1,6 @@
 {
   "name": "notify_bots",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
 	"exports": "./index.js",
 	"types": "./index.d.ts",
@@ -9,6 +9,6 @@
   "license": "MIT",
   "dependencies": {
     "crypto": "^1.0.1",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^2.6.7"
   }
 }
