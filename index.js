@@ -1,4 +1,5 @@
 import axios from "axios"
+import crypto from "crypto"
 
 export default class NotiFyBot {
   constructor(url, secret_key) {
