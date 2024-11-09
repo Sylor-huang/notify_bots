@@ -1,4 +1,3 @@
-import crypto from "crypto"
 import axios from "axios"
 
 export default class NotiFyBot {
@@ -13,7 +12,7 @@ export default class NotiFyBot {
     );
     return hmac.digest("base64");
   }
-  post(data) {
+  async post(data) {
     if (this.secret_key) {
       const timestamp = Math.floor(Date.now() / 1000);
       data.timestamp = timestamp;

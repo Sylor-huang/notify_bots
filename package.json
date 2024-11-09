@@ -1,6 +1,6 @@
 {
   "name": "notify_bots",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "type": "module",
   "exports": "./index.js",
   "types": "./index.d.ts",
@@ -8,7 +8,6 @@
   "funding": "https://github.com/Sylor-huang/notify_bots.git",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.8",
-    "crypto": "^1.0.1"
+    "axios": "^1.6.8"
   }
 }
